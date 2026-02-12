@@ -2,7 +2,7 @@
 
 John Maven is the AI agent of [Delphi One](https://www.delphi.one) — an autonomous financial research agent that thinks, plans, and learns as it works. It performs analysis using task planning, self-reflection, and real-time market data. Think Claude Code, but built specifically for financial research.
 
-<img width="1098" height="659" alt="Screenshot 2026-01-21 at 5 25 10 PM" src="https://github.com/user-attachments/assets/3bcc3a7f-b68a-4f5e-8735-9d22196ff76e" />
+<img width="1098" height="659" alt="John Maven CLI" src="https://ba5edced4b568a4405fcd9ad6213c70f.cdn.bubble.io/f1770919565207x599533699860567600/jmv_cli_fit.png" />
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ John Maven takes complex financial questions and turns them into clear, step-by-
 [![Twitter Follow](https://img.shields.io/twitter/follow/D1_JohnMaven?style=social)](https://twitter.com/D1_JohnMaven)
 [![Twitter Follow](https://img.shields.io/twitter/follow/Delphi_One?style=social)](https://twitter.com/Delphi_One)
 
-<img width="875" height="558" alt="Screenshot 2026-01-21 at 5 22 19 PM" src="https://github.com/user-attachments/assets/72d28363-69ea-4c74-a297-dfa60aa347f7" />
+<img width="875" height="558" alt="John Maven Flow" src="https://ba5edced4b568a4405fcd9ad6213c70f.cdn.bubble.io/f1770919192456x929336866895096000/jonn_maven_flow_fit.png" />
 
 
 ## ✅ Prerequisites
