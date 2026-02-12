@@ -5,7 +5,7 @@
  * Callers opt in by passing `{ cacheable: true }` to API calls;
  * the cache module unconditionally stores and retrieves keyed JSON.
  *
- * Cache files live in .dexter/cache/ (already gitignored via .dexter/*).
+ * Cache files live in .jmv/cache/ (already gitignored via .jmv/*).
  */
 import { existsSync, readFileSync, writeFileSync, mkdirSync, unlinkSync } from 'fs';
 import { join, dirname } from 'path';
@@ -28,7 +28,7 @@ interface CacheEntry {
   cachedAt: string;
 }
 
-const CACHE_DIR = '.dexter/cache';
+const CACHE_DIR = '.jmv/cache';
 
 // ============================================================================
 // Helpers

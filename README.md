@@ -1,6 +1,6 @@
-# Dexter 🤖
+# John Maven 🤖
 
-Dexter is an autonomous financial research agent that thinks, plans, and learns as it works. It performs analysis using task planning, self-reflection, and real-time market data. Think Claude Code, but built specifically for financial research.
+John Maven is the AI agent of [Delphi One](https://www.delphi.one) — an autonomous financial research agent that thinks, plans, and learns as it works. It performs analysis using task planning, self-reflection, and real-time market data. Think Claude Code, but built specifically for financial research.
 
 <img width="1098" height="659" alt="Screenshot 2026-01-21 at 5 25 10 PM" src="https://github.com/user-attachments/assets/3bcc3a7f-b68a-4f5e-8735-9d22196ff76e" />
 
@@ -13,12 +13,13 @@ Dexter is an autonomous financial research agent that thinks, plans, and learns 
 - [📊 How to Evaluate](#-how-to-evaluate)
 - [🐛 How to Debug](#-how-to-debug)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [🙏 Credits](#-credits)
 - [📄 License](#-license)
 
 
 ## 👋 Overview
 
-Dexter takes complex financial questions and turns them into clear, step-by-step research plans. It runs those tasks using live market data, checks its own work, and refines the results until it has a confident, data-backed answer.  
+John Maven takes complex financial questions and turns them into clear, step-by-step research plans. It runs those tasks using live market data, checks its own work, and refines the results until it has a confident, data-backed answer.
 
 **Key Capabilities:**
 - **Intelligent Task Planning**: Automatically decomposes complex queries into structured research steps
@@ -27,7 +28,8 @@ Dexter takes complex financial questions and turns them into clear, step-by-step
 - **Real-Time Financial Data**: Access to income statements, balance sheets, and cash flow statements
 - **Safety Features**: Built-in loop detection and step limits to prevent runaway execution
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/virattt?style=social)](https://twitter.com/virattt)
+[![Twitter Follow](https://img.shields.io/twitter/follow/D1_JohnMaven?style=social)](https://twitter.com/D1_JohnMaven)
+[![Twitter Follow](https://img.shields.io/twitter/follow/Delphi_One?style=social)](https://twitter.com/Delphi_One)
 
 <img width="875" height="558" alt="Screenshot 2026-01-21 at 5 22 19 PM" src="https://github.com/user-attachments/assets/72d28363-69ea-4c74-a297-dfa60aa347f7" />
 
@@ -62,8 +64,8 @@ bun --version
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/virattt/dexter.git
-cd dexter
+git clone https://github.com/DelphiOneGit/D1_JohnMaven.git
+cd D1_JohnMaven
 ```
 
 2. Install dependencies with Bun:
@@ -96,7 +98,7 @@ cp env.example .env
 
 ## 🚀 How to Run
 
-Run Dexter in interactive mode:
+Run John Maven in interactive mode:
 ```bash
 bun start
 ```
@@ -108,7 +110,7 @@ bun dev
 
 ## 📊 How to Evaluate
 
-Dexter includes an evaluation suite that tests the agent against a dataset of financial questions. Evals use LangSmith for tracking and an LLM-as-judge approach for scoring correctness.
+John Maven includes an evaluation suite that tests the agent against a dataset of financial questions. Evals use LangSmith for tracking and an LLM-as-judge approach for scoring correctness.
 
 **Run on all questions:**
 ```bash
@@ -124,11 +126,11 @@ The eval runner displays a real-time UI showing progress, current question, and 
 
 ## 🐛 How to Debug
 
-Dexter logs all tool calls to a scratchpad file for debugging and history tracking. Each query creates a new JSONL file in `.dexter/scratchpad/`.
+John Maven logs all tool calls to a scratchpad file for debugging and history tracking. Each query creates a new JSONL file in `.jmv/scratchpad/`.
 
 **Scratchpad location:**
 ```
-.dexter/scratchpad/
+.jmv/scratchpad/
 ├── 2026-01-30-111400_9a8f10723f79.jsonl
 ├── 2026-01-30-143022_a1b2c3d4e5f6.jsonl
 └── ...
@@ -156,6 +158,9 @@ This makes it easy to inspect exactly what data the agent gathered and how it in
 
 **Important**: Please keep your pull requests small and focused.  This will make it easier to review and merge.
 
+## 🙏 Credits
+
+John Maven is based on [Dexter](https://github.com/virattt/dexter) by [@virattt](https://twitter.com/virattt). Thank you for building and open-sourcing such an excellent foundation for AI-powered financial research.
 
 ## 📄 License
 

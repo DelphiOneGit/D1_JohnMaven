@@ -1,8 +1,8 @@
 /**
  * Source of a skill definition.
- * - builtin: Shipped with Dexter (src/skills/builtin/)
- * - user: User-level skills (~/.dexter/skills/)
- * - project: Project-level skills (.dexter/skills/)
+ * - builtin: Shipped with John Maven (src/skills/builtin/)
+ * - user: User-level skills (~/.jmv/skills/)
+ * - project: Project-level skills (.jmv/skills/)
  */
 export type SkillSource = 'builtin' | 'user' | 'project';
 

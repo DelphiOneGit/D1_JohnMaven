@@ -1,11 +1,11 @@
 {
-  "name": "dexter-ts",
+  "name": "john-maven",
   "version": "2026.2.11",
-  "description": "Dexter - AI agent for deep financial research.",
+  "description": "John Maven - AI agent for deep financial research by Delphi One.",
   "type": "module",
   "main": "src/index.tsx",
   "bin": {
-    "dexter-ts": "./src/index.tsx"
+    "jmv": "./src/index.tsx"
   },
   "scripts": {
     "start": "bun run src/index.tsx",

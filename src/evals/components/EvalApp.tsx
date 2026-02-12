@@ -123,7 +123,7 @@ export function EvalApp({ runEvaluation }: EvalAppProps) {
   if (state.status === 'loading') {
     return (
       <Box flexDirection="column" marginTop={1}>
-        <Text color={colors.primary} bold>Dexter Eval</Text>
+        <Text color={colors.primary} bold>John Maven Eval</Text>
         <Text color={colors.muted}>Loading dataset...</Text>
       </Box>
     );
@@ -174,7 +174,7 @@ export function EvalApp({ runEvaluation }: EvalAppProps) {
     <Box flexDirection="column" marginTop={1}>
       {/* Header */}
       <Box marginBottom={1}>
-        <Text color={colors.primary} bold>Dexter Eval</Text>
+        <Text color={colors.primary} bold>John Maven Eval</Text>
         {state.datasetName && (
           <Text color={colors.muted}> • {state.datasetName}</Text>
         )}

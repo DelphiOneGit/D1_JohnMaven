@@ -14,8 +14,8 @@ const __dirname = dirname(__filename);
  */
 const SKILL_DIRECTORIES: { path: string; source: SkillSource }[] = [
   { path: __dirname, source: 'builtin' },
-  { path: join(homedir(), '.dexter', 'skills'), source: 'user' },
-  { path: join(process.cwd(), '.dexter', 'skills'), source: 'project' },
+  { path: join(homedir(), '.jmv', 'skills'), source: 'user' },
+  { path: join(process.cwd(), '.jmv', 'skills'), source: 'project' },
 ];
 
 // Cache for discovered skills (metadata only)
