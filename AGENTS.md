@@ -87,8 +87,8 @@
 
 ## Version & Release
 
-- Version format: CalVer `YYYY.M.D` (no zero-padding). Tag prefix: `v`.
-- Release script: `bash scripts/release.sh [version]` (defaults to today's date).
+- Version format: SemVer `MAJOR.MINOR.PATCH` (e.g., `1.0.1`). Tag prefix: `v`.
+- Release script: `bash scripts/release.sh <major|minor|patch|x.y.z>`.
 - Release flow: bump version in `package.json`, create git tag, push tag, create GitHub release via `gh`.
 - Do not push or publish without user confirmation.
 

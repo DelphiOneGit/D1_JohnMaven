@@ -2,10 +2,30 @@
 set -euo pipefail
 
 # Release script for John Maven
-# Usage: bash scripts/release.sh [version]
-# If no version is provided, defaults to today's date as YYYY.M.D
+# Usage: bash scripts/release.sh <major|minor|patch|x.y.z>
+# Examples:
+#   bash scripts/release.sh patch   # 1.0.1 -> 1.0.2
+#   bash scripts/release.sh minor   # 1.0.1 -> 1.1.0
+#   bash scripts/release.sh major   # 1.0.1 -> 2.0.0
+#   bash scripts/release.sh 2.1.0   # explicit version
 
-VERSION="${1:-$(date +%Y.%-m.%-d)}"
+CURRENT_VERSION=$(node -p "require('./package.json').version")
+
+if [[ -z "${1:-}" ]]; then
+  echo "Usage: bash scripts/release.sh <major|minor|patch|x.y.z>"
+  echo "Current version: ${CURRENT_VERSION}"
+  exit 1
+fi
+
+# Parse current version
+IFS='.' read -r CUR_MAJOR CUR_MINOR CUR_PATCH <<< "$CURRENT_VERSION"
+
+case "$1" in
+  major) VERSION="$((CUR_MAJOR + 1)).0.0" ;;
+  minor) VERSION="${CUR_MAJOR}.$((CUR_MINOR + 1)).0" ;;
+  patch) VERSION="${CUR_MAJOR}.${CUR_MINOR}.$((CUR_PATCH + 1))" ;;
+  *)     VERSION="$1" ;;
+esac
 TAG="v${VERSION}"
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 
@@ -78,7 +98,6 @@ if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
 fi
 
 # Bump version in package.json
-CURRENT_VERSION=$(node -p "require('./package.json').version")
 if [[ "$CURRENT_VERSION" != "$VERSION" ]]; then
   # Use node for a reliable in-place JSON edit
   node -e "

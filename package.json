@@ -1,6 +1,6 @@
 {
   "name": "john-maven",
-  "version": "2026.2.11",
+  "version": "1.0.1",
   "description": "John Maven - AI agent for deep financial research by Delphi One.",
   "type": "module",
   "main": "src/index.tsx",
